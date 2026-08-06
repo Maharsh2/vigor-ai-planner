@@ -133,12 +133,20 @@ const Onboarding = () => {
                     onChange={(e) => updateForm("experience", e.target.value)}
                   />
                   <Select
+                    id="daysperweek"
+                    label="Days Per Week?"
+                    options={daysOptions}
+                    value={formData.daysPerWeek}
+                    onChange={(e) => updateForm("daysPerWeek", e.target.value)}
+                  />
+                  <Select
                     id="sessionLength"
-                    label="Session length?"
+                    label="Seesion Length"
                     options={sessionOptions}
                     value={formData.sessionLength}
-                    onChange={(e) => updateForm("session", e.target.value)}
+                    onChange={(e) => updateForm("sessionLength", e.target.value)}
                   />
+                  
                 </div>
                 <Select
                   id="equipment"
