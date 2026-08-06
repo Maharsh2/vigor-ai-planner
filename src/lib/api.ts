@@ -1,6 +1,6 @@
 import { UserProfile } from "../types";
 const BASE_URL =
-  (import.meta as any).env?.VITE_API_URL || "http://localhost:3001";
+  (import.meta as any).env?.VITE_API_URL || "https://vigor-ai-planner.onrender.com";
 
 async function post(path: string, body: object) {
   const res = await fetch(`${BASE_URL}/api${path}`, {
