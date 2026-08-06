@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "ESNext",
+    "target": "ES2020",
+    "module": "commonjs",
     "lib": ["ES2022"],
-    "moduleResolution": "bundler",
     "outDir": "./dist",
     "strict": false,
     "esModuleInterop": true,
@@ -13,6 +12,6 @@
     "allowSyntheticDefaultImports": true,
     "types": ["node"]
   },
-  "include": ["./src/**/*"],
+  
   "exclude": ["node_modules", "dist", "generated", "prisma.config.ts"]
 }
