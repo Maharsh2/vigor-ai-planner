@@ -10,7 +10,13 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());
+app.use(cors({
+  origin:[
+    'http://localhost:5173',
+    'https://vigor-ai-planner-98z3.vercel.app'
+  ],
+  credentials: true
+}));
 app.use(cookieParser());
 app.use(express.json());
 
