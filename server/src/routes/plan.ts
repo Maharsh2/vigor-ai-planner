@@ -12,7 +12,7 @@ planRouter.post("/generate", async (req: Request, res: Response) => {
       return res.status(400).json({ error: "User ID is required" });
     }
 
-    const profile = await prisma.user_profile.findUnique({
+    const profile = await prisma.user_profiles.findUnique({
       where: { user_id: userId },
     });
 

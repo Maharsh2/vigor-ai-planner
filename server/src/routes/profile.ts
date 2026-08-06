@@ -32,7 +32,7 @@ profileRouter.post("/", async (req: Request, res: Response) => {
       return res.status(400).json({ error: "Missing required fields" });
     }
 
-    await prisma.user_profile.upsert({
+    await prisma.user_profiles.upsert({
       where: { user_id: userId },
       update: {
         goal,
